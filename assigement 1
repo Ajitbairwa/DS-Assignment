@@ -1,0 +1,122 @@
+# 1. Create a string variable with your name and perform the following
+# operations:
+# o Print the first character
+# o Print the last character
+# o Print the length of the string
+# o Convert the string to uppercase
+# o Convert the string to lowercase
+# o Reverse the string using slicing
+
+
+name= "Ajit Bairwa"
+print("first character : ",name[0])
+print("last character : ",name[-1])
+print("length of the string : ",len(name))
+print("upprecase : ",name.upper())
+print("lowercase : ",name.lower())
+print("Reverse the string", name[::-1])
+
+
+
+# 2. Write a Python program to perform string slicing on a given string:
+# o Print the first four characters
+# o Print characters from index 2 to 5
+# o Print the complete string in reverse order
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>string slicing<<<<<<<<<<<<<<<<<<<<<<<<<
+
+name = "AjitBairwa"
+
+print(" My String :- ", name)
+
+print("First Four Characters :- ", name[0:4])
+
+print("Characters from Index 2 to 5 :- ", name[2:6])
+
+print("Reverse String :- ", name[::-1])
+
+
+
+
+
+# 3. Create a list containing numbers and perform the following operations:
+# o Add an element using append()
+# o Insert an element at a specific position
+# o Remove an element using remove()
+# o Delete the last element using pop()
+# o Reverse the list
+# o Sort the list
+# o Find the length of the list
+# o Count the occurrence of an element
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>list<<<<<<<<<<<<<<<<<<<<<<<<<
+
+num = [1, 7, 8, 4, 2, 5]
+
+print("Original List :- ", num)
+
+num.append(6)
+print("After Append :- ", num)
+
+num.insert(7, 3)
+print("After Insert :- ", num)
+
+num.remove(3)
+print("After Remove :- ", num)
+
+num.pop()
+print("After Pop :- ", num)
+
+num.reverse()
+print("After Reverse :- ", num)
+
+num.sort()
+print("After Sort :- ", num)
+
+print("Length of List :- ", len(num))
+
+num.append(0)
+
+print("Count of 20 :- ", num.count(2))
+
+
+
+
+
+# 4. Create a tuple containing 5 subjects. Perform the following operations:
+# o Print the first element
+# o Print the last element
+# o Print the length of the tuple
+# o Print elements using slicing
+# o Find the maximum, minimum, and sum of numerical tuple elements
+
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>tuple<<<<<<<<<<<<<<<<<<<<<<<<<
+
+subjects = ("Python", "Java", "C", "C++", "DSA")
+
+print("Tuple :- ", subjects)
+
+print("First Element :- ", subjects[0])
+
+print("Last Element :- ", subjects[-1])
+
+print("Length of Tuple :- ", len(subjects))
+
+print("Slicing :- ", subjects[1:4])
+
+
+num = (10, 20, 30, 40, 50)
+
+print("Numerical Tuple :- ", num)
+
+print("Maximum Element :- ", max(num))
+
+print("Minimum Element :- ", min(num))
+
+print("Sum of Elements :- ", sum(num))
