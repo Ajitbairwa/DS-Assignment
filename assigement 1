@@ -120,3 +120,158 @@ print("Maximum Element :- ", max(num))
 print("Minimum Element :- ", min(num))
 
 print("Sum of Elements :- ", sum(num))
+
+
+
+# 5. Write a Python program to demonstrate tuple packing and unpacking. Create
+# a tuple of four values and assign them to four separate variables.
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>Tuple Packing and Unpacking<<<<<<<<<<<<<<<<<<<<<<<<<
+
+student = ("Ajit", 21, "BTech", 8.5)
+
+print("Tuple :- ", student)
+
+name, age, course, cgpa = student
+
+print("Name :- ", name)
+print("Age :- ", age)
+print("Course :- ", course)
+print("CGPA :- ", cgpa)
+
+
+
+# 6. Create a dictionary containing student details:
+# o Name
+# o Age
+# o Course
+# o Address
+# Perform the following operations:
+# o Print all keys
+# o Print all values
+# o Print all items
+# o Update the Address
+# o Add a new key called "Branch"
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>Dictionary<<<<<<<<<<<<<<<<<<<<<<<<<
+
+student = {
+    "Name": "Ajit",
+    "Age": 21,
+    "Course": "BTech",
+    "Address": "Jaipur"
+}
+
+print("Student Details :- ", student)
+
+print("All Keys :- ", student.keys())
+
+print("All Values :- ", student.values())
+
+print("All Items :- ", student.items())
+
+student["Address"] = "Kota"
+
+print("Updated Address :- ", student)
+
+student["Branch"] = "Computer Science"
+
+print("After Adding Branch :- ", student)
+
+
+
+# 7. Write a Python program to access an element from a nested list.
+# Example:
+# [1, 2, 3, 4, [2, 5], 7]
+# Print the value 5 using indexing.
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>Nested List<<<<<<<<<<<<<<<<<<<<<<<<<
+
+num = [1, 2, 3, 4, [2, 5], 7]
+
+print("Nested List :- ", num)
+
+print("Value 5 :- ", num[4][1])
+
+
+
+
+# 8. Write a Python program to take a number as input from the user and:
+# o Add 10 using the += operator
+# o Print the updated value
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>Assignment Operator<<<<<<<<<<<<<<<<<<<<<<<<<
+
+num = int(input("Enter a Number :- "))
+
+num += 10
+
+print("Updated Value :- ", num)
+
+
+
+
+# 9. Write a Python program to demonstrate type casting:
+# o Take two numbers as input from the user
+# o Convert them to integers
+# o Print their multiplication
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>Type Casting<<<<<<<<<<<<<<<<<<<<<<<<<
+
+num1 = input("Enter First Number :- ")
+num2 = input("Enter Second Number :- ")
+
+num1 = int(num1)
+num2 = int(num2)
+
+print("Multiplication :- ", num1 * num2)
+
+
+
+
+# 10. Create a dictionary and demonstrate the use of:
+# o get()
+# o keys()
+# o values()
+# o items()
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>Dictionary Methods<<<<<<<<<<<<<<<<<<<<<<<<<
+
+student = {
+    "Name": "Ajit",
+    "Age": 21,
+    "Course": "BTech"
+}
+
+print("Get Method :- ", student.get("Name"))
+
+print("Keys :- ", student.keys())
+
+print("Values :- ", student.values())
+
+print("Items :- ", student.items())
+
+
+
+# 11. Create a copy of a list using copy() and print both the original and copied
+# lists.
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>List Copy<<<<<<<<<<<<<<<<<<<<<<<<<
+
+list1 = [10, 20, 30, 40, 50]
+
+list2 = list1.copy()
+
+print("Original List :- ", list1)
+
+print("Copied List :- ", list2)
